@@ -38,11 +38,11 @@ def main():
             zones = zones - 1
             start = 0
             while True:
-                strip.set_zone_color(0, zones, color1, 500, False, 0) #queue command
+                strip.set_zone_color(0, zones, color1, 500, True, 0) #queue command
                 if start > zones-size:
                     end = size - (zones - start) - 1
-                    strip.set_zone_color(0, end, color2, 500, False, 0)#queue command
-                strip.set_zone_color(start, start+size, color2,500,False,1) #execute command
+                    strip.set_zone_color(0, end, color2, 500, True, 0)#queue command
+                strip.set_zone_color(start, start+size, color2,500,True,1) #execute command
 
                 start += 1
                 if start > zones:
