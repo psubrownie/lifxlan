@@ -1,7 +1,8 @@
-from setuptools import setup
+from distutils.core import setup
+#from setuptools import setup
 
 setup(name='lifxlan',
-      version='0.3.0',
+      version='1.0.0',
       description='API for local communication with LIFX devices over a LAN.',
       url='http://github.com/mclarkk/lifxlan',
       author='Meghan Clark',
@@ -21,5 +22,10 @@ setup(name='lifxlan',
         # that you indicate whether you support Python 2, Python 3 or both.
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.6',
-        'Programming Language :: Python :: 2.7'
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6'
     ])

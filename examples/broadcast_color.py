@@ -1,7 +1,10 @@
 #!/usr/bin/env python
+# coding=utf-8
 
-from lifxlan import *
 import sys
+
+from lifxlan import BLUE, COLD_WHITE, CYAN, GOLD, GREEN, LifxLAN, \
+    ORANGE, PINK, PURPLE, RED, WARM_WHITE, WHITE, YELLOW
 
 colors = {
     "red": RED, 
@@ -13,7 +16,7 @@ colors = {
     "purple": PURPLE, 
     "pink": PINK, 
     "white": WHITE, 
-    "cold_white": COLD_WHTE, 
+    "cold_white": COLD_WHITE, 
     "warm_white": WARM_WHITE, 
     "gold": GOLD
 }
@@ -59,5 +62,6 @@ else:
     print(error_message)
     sys.exit()
 
+print(color)
 lifxlan.set_color_all_lights(color, rapid=True)
 
